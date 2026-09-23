@@ -415,7 +415,7 @@ void drawScreen() {
   // --- 最終更新時刻 ---
   tft.setTextDatum(TR_DATUM);
   tft.setTextColor(COL_SUB, COL_BG);
-  tft.drawString(gLastUpdate, 225, 18, 1);
+  tft.drawString(gLastUpdate, 140, 40, 1);
 }
 
 // ---------------------------------------------------------------
