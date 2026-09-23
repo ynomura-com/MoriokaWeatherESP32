@@ -37,13 +37,13 @@
 #include <time.h>
 
 // ============ ユーザー設定 ============
-const char* WIFI_SSID     = "ynAir_G";
-const char* WIFI_PASSWORD = "tsubasahikaru";
+const char* WIFI_SSID     = "YOUR_WIFI_SSID";        // 使用するWiFiの情報に書き換え
+const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
 
-// 盛岡市 (岩手県) の緯度経度
+// 盛岡市 (岩手県) の緯度経度　（希望の場所に書き換える）
 const float LAT = 39.7036f;
 const float LON = 141.1527f;
-const char* LOCATION_NAME_JP = "もりおか";
+const char* LOCATION_NAME_JP = "もりおか";       // 画面上部に表示する地名（漢字も指定できるがフォントが無い場合もある）
 
 // 気象情報の更新間隔 (ミリ秒)
 const unsigned long UPDATE_INTERVAL_MS = 10UL * 60UL * 1000UL; // 10分
