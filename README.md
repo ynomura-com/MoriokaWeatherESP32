@@ -21,13 +21,19 @@ PlatformIOでは TFT_eSPI の設定をライブラリのファイルを書き換
 3. 初回はESP32用のツールチェーンとライブラリ (TFT_eSPI, ArduinoJson, U8g2) が
    自動でダウンロードされます (数分かかります・要インターネット接続)
 
-## 3. Wi-Fi設定
+## 3. Wi-Fiと場所を設定
 
 `src/main.cpp` の冒頭にある以下の部分を、ご自宅のWi-Fi情報に書き換えてください。
 
 ```cpp
 const char* WIFI_SSID     = "YOUR_WIFI_SSID";
 const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
+```
+```cpp
+// 盛岡市 (岩手県) の緯度経度
+const float LAT = 39.7036f;
+const float LON = 141.1527f;
+const char* LOCATION_NAME_JP = "もりおか";
 ```
 
 ## 4. ビルド・書き込み・シリアルモニタ
